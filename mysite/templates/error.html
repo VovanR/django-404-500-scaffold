@@ -1,0 +1,10 @@
+{% extends "default.html" %}
+
+{% load i18n %}
+{% load l10n %}
+
+{% block content %}
+<p class="error-page__code">{% trans 'Error' %} <strong>{% block error-code %}{% endblock error-code %}</strong></p>
+
+<p class="error-page__desc">{% block error-desc %}{% endblock error-desc %}</p>
+{% endblock content %}
